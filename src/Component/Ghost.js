@@ -22,7 +22,7 @@ function Ghost() {
 
   return (
       <section onClick={()=>{navigate("/")}} className='ghostPop'>
-        <figure><img src={`../ghost_${randomNum}.png`}></img></figure>
+        <figure><img src={`./ghost_${randomNum}.png`}></img></figure>
         <p className='deadText' onClick={()=>{navigate("/")}}>당신은 죽었습니다.</p>
       </section>
 )

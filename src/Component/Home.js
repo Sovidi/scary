@@ -18,7 +18,7 @@ function Home() {
 
   return (
       <Link to="/room1_intro" className='intro'>
-        <figure><img src='./House.png'></img></figure>
+        <figure><img src='./house.png'></img></figure>
       </Link>
   )
 }

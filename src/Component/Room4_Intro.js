@@ -18,7 +18,7 @@ function Room4_intro() {
       <div className='selects room3_sel'>
         <Link to={`/room4`}>
           <p>눈앞에 있는 방으로 들어간다.</p>
-          <figure><img src='../blackdoor.png' /></figure>
+          <figure><img src='./blackdoor.png' /></figure>
         </Link>
       </div>
     </section>

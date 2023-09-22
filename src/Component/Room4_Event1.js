@@ -19,7 +19,7 @@ function Room4_Event1() {
       <div className='selects room4_event1_sel'>
         <Link to={`/room4_event2`}>
           <p>다시 불을 끈다.</p>
-          <figure><img src='../hand.png' /></figure>
+          <figure><img src='./hand.png' /></figure>
         </Link>
       </div>
     </section>

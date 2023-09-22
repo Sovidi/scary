@@ -24,7 +24,7 @@ function Room4_Event3() {
       <div className='selects room4_event3_sel'>
         <Link to={`/ghost`}>
           <p></p>
-          <figure><img src='../hand.png' /></figure>
+          <figure><img src='./hand.png' /></figure>
         </Link>
 
       </div>

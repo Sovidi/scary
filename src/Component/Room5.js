@@ -24,13 +24,13 @@ function Room5() {
 
   return (
     <section className="rooms room4">
-      <figure><img src='./Room_5.png'></img></figure>
+      <figure><img src='./room_5.png'></img></figure>
       <p>알 수 없는 금고가 놓여 있다.</p>
       <div className='selects room3_sel'>
         <form onSubmit={(e)=>{ending(e)}}>
           <p>숫자를 적는다</p>
           <input name='password'/>
-          <figure><img src='../hand.png' /></figure>
+          <figure><img src='./hand.png' /></figure>
         </form>
       </div>
     </section>

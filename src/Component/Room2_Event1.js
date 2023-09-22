@@ -27,16 +27,16 @@ function Room2_Event1() {
 
   return (
       <section className="rooms room2_event1">
-        <figure><img src='./Room_2_ghost.png'></img></figure>
+        <figure><img src='./room_2_ghost.png'></img></figure>
         <p>갑자기 나타난 아이 형상의 귀신에 심장이 뛰기 시작한다!..</p>
         <div className='selects room2_event1_sel'>
           <Link to={`/room2_event2`}>
             <p>곰인형을 돌려준다</p>
-            <figure><img src='../hand.png' /></figure>
+            <figure><img src='./hand.png' /></figure>
           </Link>
           <Link to={`/ghost`}>
             <p>말을 건다</p>
-            <figure><img src='../hand.png' /></figure>
+            <figure><img src='./hand.png' /></figure>
           </Link>
         </div>
       </section>

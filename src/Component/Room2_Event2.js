@@ -27,7 +27,7 @@ function Room2_Event2() {
 
   return (
       <section className="rooms room2_event2">
-        <figure><img src='../room_2_ghost2.png'/></figure>
+        <figure><img src='./room_2_ghost2.png'/></figure>
         <p>정신을 잃고 쓰러진다..</p>
         <div className='selects room2_event2_sel'>
           <Link to={`/room3_intro`}>
