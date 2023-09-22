@@ -18,7 +18,7 @@ function Ghost() {
     getRandomNumber();
     setTimeout(() => {
       navigate("/")
-    }, 1000);
+    }, 2000);
   }, []);
 
   useEffect(()=>{
