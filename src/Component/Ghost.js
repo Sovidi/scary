@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { myContext } from '../Context';
-import Sound from 'react-sound';
 
 
 function Ghost() {
