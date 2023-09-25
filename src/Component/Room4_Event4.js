@@ -18,7 +18,7 @@ function Room4_Event4() {
       <p>...</p>
       <div className='selects room4_event4_sel'>
         <Link to={`/room5`}>
-          <p>다시 불을 켠다..</p>
+          <p>옆방으로 조용히 들어간다.</p>
           <figure><img src='./hand.png' /></figure>
         </Link>
         <Link to={`/ghost`}>

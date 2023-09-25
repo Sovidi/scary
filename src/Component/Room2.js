@@ -40,7 +40,7 @@ function Room1() {
           </Link>
           <Link to={`/ghost`}>
             <p>다시 나간다</p>
-            <figure><img src='./blackDoor.png' /></figure>
+            <figure><img src='./blackdoor.png' /></figure>
           </Link>
         </div>
       </section>

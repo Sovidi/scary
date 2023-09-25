@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Space() {
   const {data, fetchFn} = useContext(myContext);
+  const navigate = useNavigate();
   
   useEffect(()=>{
     fetchFn("space", "");
@@ -13,7 +14,7 @@ function Space() {
   return (
     <section className='rooms event spaceSec'>
       <p>당신은 우주 공간으로 떨어졌습니다.</p>
-      <a href='/'>돌아가기</a>
+      <a onClick={()=>{navigate("/")}}>돌아가기</a>
       <figure><img src={data.url} alt="" /></figure>
     </section>
   )
