@@ -1,6 +1,10 @@
 import './App.scss';
 import {HashRouter, BrowserRouter, Link, Routes, Route, useNavigate} from "react-router-dom"
+import { useEffect } from 'react';
 import Context from './Context';
+
+import useSound from 'use-sound';
+import soundFile from "./media/background.mp3";
 
 import Home from './Component/Home';
 import Room1_Intro from './Component/Room1_Intro';
@@ -32,6 +36,11 @@ import Room5_Event1 from './Component/Room5_Event1';
 import Escape from './Component/Escape';
 
 function App() {  
+  const [play, { stop }] = useSound(soundFile, { loop: true, autoplay: true });
+
+  useEffect(()=>{
+    play();
+  }, []);
 
   return (
     <Context>
