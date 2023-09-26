@@ -73,19 +73,22 @@ function Context({children}) {
         switch (type) {
             case "space" :
                 res = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=yq2fKjbfLH7bFiRl80TMckGQxLFsQUhpleuxOUCD&date=${randomDate}`);
+                res = res.data;
                 break;
             case "commentGet" :
                 res = await server.get("/abc");
+                res = res.data;
                 break;
             case "comment" :
                 res = await server.post("/insert", data);
+                res = res.data;
                 break;
             // case "search" : 
             //     res = await searchTest.get(`/`, {params: {q: data}});
             //     break;
             default : console.log("데이터 없음");
         }
-        dispatch({type, d: res.data});
+        dispatch({type, d: res});
         // console.log(res.data);
     }
 
