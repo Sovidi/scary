@@ -72,7 +72,7 @@ function Context({children}) {
         let res;
         switch (type) {
             case "space" :
-                res = await space.get("/");
+                res = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=yq2fKjbfLH7bFiRl80TMckGQxLFsQUhpleuxOUCD&date=${randomDate}`);
                 break;
             case "commentGet" :
                 res = await server.get("/abc");
@@ -86,7 +86,7 @@ function Context({children}) {
             default : console.log("데이터 없음");
         }
         dispatch({type, d: res.data});
-        console.log(res.data);
+        // console.log(res.data);
     }
 
     useEffect(()=>{

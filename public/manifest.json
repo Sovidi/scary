@@ -5,7 +5,8 @@
     {
       "src": "favicon.png",
       "sizes": " 196x196 128 96x96 32x32 16x16",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "apple-touch-icon.png",
