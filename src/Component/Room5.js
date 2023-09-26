@@ -15,7 +15,7 @@ function Room5() {
   const ending = (e) => {
     e.preventDefault();
     if (e.target.password.value == 1994) {
-      navigate("/endroom");
+      navigate("/room5_event1");
     } else {
       navigate("/ghost");
     }
@@ -26,7 +26,7 @@ function Room5() {
     <section className="rooms room4">
       <figure><img src='./room_5.png'></img></figure>
       <p>알 수 없는 금고가 놓여 있다.</p>
-      <div className='selects room3_sel'>
+      <div className='selects room5_sel'>
         <form onSubmit={(e)=>{ending(e)}}>
           <p>숫자를 적는다</p>
           <input name='password'/>

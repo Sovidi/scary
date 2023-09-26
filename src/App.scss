@@ -89,6 +89,26 @@ body {
             }
           }
         }
+
+        >form{
+            text-decoration: none;
+            color: white;
+            margin: 0 30px;
+            width: 100%;
+  
+            >p{
+              width: 100%;
+              margin: 3% 0;
+            }
+  
+            >figure{
+              max-width: 150px;
+              margin: 0 auto;
+              > img {
+                width: 100%;
+              }
+            }
+        }
     
         // &.room1_event1_sel{
         //   text-align: center;
@@ -157,27 +177,52 @@ body {
         align-items: center;
         flex-direction: column;
         >input{
+          padding: 10px 0;
           text-align: center;
           margin: 10px auto;
         }
         >textarea{
           text-align: center;
           width: 400px;
-          height: 200px;
+          padding: 40px 0;
           margin: 10px 0;
         }
         >button{
           font-size: 1rem;
+          background-color: #999999;
+          border-radius: 30px;
+          padding: 8px;
+          // border: 3px solid #888888;
+
         }
       }
       .commentList{
-        text-align: center;
-        >li{
+        text-align: left;
+        >.commentBox{
+          // text-align: left;
           display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
           padding: 10px;
           width: 200px;
           margin: 5px auto;
           color: rgb(255, 255, 255);
+          >p{
+            margin: 3% 0;
+          }
+          >div{
+            >p{
+              &:nth-of-type(1){
+                font-weight: bold;
+                font-size: 1.3rem;
+              }
+              &:nth-of-type(2){
+                font-size: 1rem;
+                color: grey;
+              }
+            }
+          }
         }
       }
     }

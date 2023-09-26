@@ -10,6 +10,9 @@ function EndRoom() {
     const insert = (e) => {
       e.preventDefault()      
       let formData = new FormData(e.target);
+      let today = new Date();
+      let date = `${today.getFullYear()}.${today.getMonth()+1}.${today.getDate()}`
+      formData.append("date", date);
       let objData = Object.fromEntries(formData);
       fetchFn("comment", objData);
       e.target.name.value = "";
@@ -26,15 +29,19 @@ function EndRoom() {
     <section className='comment'>
       <p>추카추카 탈출하셨습니다.</p>
       <form onSubmit={(e)=>{insert(e)}} className='text' ref={elForm}>
-          <input required placeholder='이름' name='name'/>
+          <input required type='text' placeholder='이름' name='name'/>
           <textarea required placeholder='댓글' name='message'></textarea>
           <button>등록하기</button>
       </form>
       <ul className='commentList'>
         {
           data.map(item=>(
-            <li>
-              <p>{item.name}</p>: <p>{item.message}</p>
+            <li className='commentBox'>
+              <div>
+                <p>{item.name}</p>
+                <p>{item.date}</p>
+              </div>
+              <p>{item.message}</p>
             </li>
           ))
         }

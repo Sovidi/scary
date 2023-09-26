@@ -86,7 +86,7 @@ function Context({children}) {
             default : console.log("데이터 없음");
         }
         dispatch({type, d: res.data});
-        // console.log(res.data);
+        console.log(res.data);
     }
 
     useEffect(()=>{

@@ -16,7 +16,7 @@ function Room4() {
     <section className="rooms room4">
       <figure><img src='./room_4.png'></img></figure>
       <p>어두워서 아무것도 보이질 않는다</p>
-      <div className='selects room3_sel'>
+      <div className='selects room4_sel'>
         <Link to={`/room4_event1`}>
           <p>불을 켠다</p>
           <figure><img src='./hand.png' /></figure>

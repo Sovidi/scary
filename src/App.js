@@ -28,6 +28,8 @@ import Room4_Event1 from './Component/Room4_Event1';
 import Room4_Event2 from './Component/Room4_Event2';
 import Room4_Event3 from './Component/Room4_Event3';
 import Room4_Event4 from './Component/Room4_Event4';
+import Room5_Event1 from './Component/Room5_Event1';
+import Escape from './Component/Escape';
 
 function App() {  
 
@@ -64,7 +66,9 @@ function App() {
             <Route path="/room4_event4" element={<Room4_Event4/>}></Route>
 
             <Route path="/room5" element={<Room5/>}></Route>
+            <Route path="/room5_event1" element={<Room5_Event1/>}></Route>
 
+            <Route path="/escape" element={<Escape/>}></Route>
             <Route path="/endroom" element={<EndRoom/>}></Route>
 
             <Route path='/ghost' element={<Ghost/>}></Route>
