@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Context from './Context';
 
 import useSound from 'use-sound';
-import soundFile from "../src/media/background.mp3";
+import soundFile from "./media/background.mp3";
 
 import Home from './Component/Home';
 import Room1_Intro from './Component/Room1_Intro';
