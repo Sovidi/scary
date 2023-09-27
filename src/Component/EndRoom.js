@@ -28,6 +28,7 @@ function EndRoom() {
   return (
     <section className='comment'>
       <p>추카추카 탈출하셨습니다.</p>
+      <p>방명록을 남겨주세요</p>
       <form onSubmit={(e)=>{insert(e)}} className='text' ref={elForm}>
           <input required type='text' placeholder='이름' name='name'/>
           <textarea required placeholder='댓글' name='message'></textarea>
