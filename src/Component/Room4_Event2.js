@@ -21,7 +21,7 @@ function Room4_Event2() {
           <p>다시 불을 켠다..</p>
           <figure><img src='./hand.png' /></figure>
         </Link>
-        <Link to={`/room3_event4`}>
+        <Link to={`/room4_event4`}>
           <p>도망간다!</p>
           <figure><img src='./hand.png' /></figure>
         </Link>

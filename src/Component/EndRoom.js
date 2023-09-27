@@ -23,7 +23,7 @@ function EndRoom() {
       fetchFn("commentGet", "");
     }, [])
     
-    if(!data) console.log(data)
+    if(!data) console.log(data);
     
   return (
     <section className='comment'>
@@ -34,6 +34,8 @@ function EndRoom() {
           <textarea required placeholder='댓글' name='message'></textarea>
           <button>등록하기</button>
       </form>
+
+      <p>방명록 확인</p>
       <ul className='commentList'>
         {
           data.map(item=>(

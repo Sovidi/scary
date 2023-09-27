@@ -34,9 +34,9 @@ function Room2_Event1() {
             <p>곰인형을 돌려준다</p>
             <figure><img src='./hand.png' /></figure>
           </Link>
-          <Link to={`/ghost`}>
+          <Link to={`/room2_event3`}>
             <p>말을 건다</p>
-            <figure><img src='./hand.png' /></figure>
+            <figure><img src='./talk.png' /></figure>
           </Link>
         </div>
       </section>

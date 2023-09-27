@@ -15,14 +15,14 @@ function Room1_Event4() {
   return (
       <div className='rooms room1_event4'>
         <figure><img src='./photo.png'/></figure>
-        <p className='letter'>위험하다</p>
+        <p>이곳에 오래 머물러선 안된다는 것을 직감적으로 느낍니다.</p>
         <div className='selects room1_event4_sel'>
           <Link to={`/room1_event2`}>
-            <p>바로 옆방으로 도망간다!</p>
+            <p>바로 옆방으로 들어간다</p>
             <figure><img src='./blackdoor.png'/></figure>
           </Link>
           <Link to={`/ghost`}>
-            <p>욕실로 도망간다!</p>
+            <p>욕실로 들어간다</p>
             <figure><img src='./blackdoor.png'/></figure>
           </Link>
 

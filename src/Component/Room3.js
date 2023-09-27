@@ -15,7 +15,7 @@ function Room3() {
   return (
       <section className="rooms room3">
         <figure><img src='./room_3.png'></img></figure>
-        <p>정신을 차려보니 욕실에 혼자 서있다</p>
+        <p>정신을 차려보니 당신은 덩그러니 욕실에 놓여있다</p>
         <div className='selects room3_sel'>
           <Link to={`/room3_event1`}>
             <p>샤워 커튼을 젖힌다</p>
@@ -23,7 +23,7 @@ function Room3() {
           </Link>
           <Link to={`/room3_event2`}>
             <p>선반을 뒤진다</p>
-            <figure><img src='./teddy.png' /></figure>
+            <figure><img src='./cabinet.png' /></figure>
           </Link>
           <Link to={`/ghost`}>
             <p>뒤돌아 나간다</p>
