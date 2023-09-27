@@ -230,7 +230,187 @@ body {
 }
 
 @media (max-width: 991px) {}
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  html{
+    font-size: 12px;
+  }
+  body {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: black;
+  
+    .downIcon{
+      position: fixed;
+      right: 45%;
+      bottom: 5%;
+      font-size: 3rem;
+    }
+
+    main{
+      transition: 1s;
+      max-width: 1900px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+
+      .intro {
+        >figure{
+          margin: 15% 0;
+          text-align: center;
+          >img {
+            width: 100%;
+          }
+        }
+      }
+    
+      .rooms {
+        &.event{
+          margin: 200px 0;
+        }
+        text-align: center;
+        width: 100%;
+  
+        >p{
+          margin: 0 auto;
+          width: 80%;
+          padding: 20px;
+          border-radius: 30px;
+          background-color: rgb(97, 0, 0);
+        }
+  
+        >figure {
+          margin: 5% 0;
+          width: 100%;
+          > img {
+            width: 100%;
+          }
+        }
+  
+        .letter{
+          font-size: 3rem;
+          text-align: center;
+          color: rgb(255, 255, 255);
+          background-color: rgb(180, 0, 0);
+        }
+  
+        .selects {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          margin: 5% auto;
+          width: 60%;
+          text-align: center;
+      
+          >a {
+            text-decoration: none;
+            color: white;
+            margin: 0 30px;
+            width: 100%;
+  
+            >p{
+              text-align: center;
+              min-width: 50px;
+              margin: 3% auto;
+            }
+  
+            >figure{
+              max-width: 150px;
+              margin: 0 auto;
+              > img {
+                width: 100%;
+              }
+            }
+          }
+      
+          // &.room1_event1_sel{
+          //   text-align: center;
+          //   a {
+          //     width: 450px;
+          //   }
+          // }
+        }
+  
+        &.spaceSec{
+          p {
+            margin: 3% auto;
+          }
+          a {
+            width: 100px;
+            color: white;
+            font-size: 2rem;
+          }
+        }
+      }
+    
+    
+    
+      .ghostPop {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        
+        position: relative;
+    
+        >figure {
+          cursor: pointer;
+          width: 200%;
+          >img {
+            object-fit: contain;
+            width: 100%;
+          }
+        }
+    
+        .deadText{
+          color: red;
+          font-size: 3rem;
+          position: absolute;
+          bottom: 30%;
+        }
+      }
+      
+      .comment{
+        text-align: center;
+        .text{
+          width: 20%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          >input{
+            text-align: center;
+            margin: 10px auto;
+          }
+          >textarea{
+            text-align: center;
+          }
+          >button{
+            font-size: 1rem;
+          }
+        }
+        .commentList{
+          text-align: center;
+          >li{
+            padding: 30px;
+            background-color: beige;
+            width: 200px;
+            margin: 30px auto;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+}
 @media (max-width: 480px) {
   html{
     font-size: 10px;
