@@ -35,6 +35,7 @@ import Room4_Event4 from './Component/Room4_Event4';
 import Room5_Event1 from './Component/Room5_Event1';
 import Escape from './Component/Escape';
 import Room2_Event3 from './Component/Room2_Event3';
+import Room6 from './Component/Room6';
 
 function App() {
   const [play, { stop }] = useSound(soundFile, { loop: true, autoplay: true });
@@ -78,6 +79,9 @@ function App() {
 
             <Route path="/room5" element={<Room5/>}></Route>
             <Route path="/room5_event1" element={<Room5_Event1/>}></Route>
+
+            <Route path="/room6" element={<Room6/>}></Route>
+
 
             <Route path="/escape" element={<Escape/>}></Route>
             <Route path="/endroom" element={<EndRoom/>}></Route>
