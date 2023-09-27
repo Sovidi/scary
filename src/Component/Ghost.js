@@ -10,7 +10,7 @@ function Ghost() {
   const [play, { stop }] = useSound(soundFile, { loop: true, autoplay: true });
 
   function getRandomNumber() {
-    return Math.floor(Math.random() * 4) + 1;
+    return Math.floor(Math.random() * 7) + 1;
   }
   const randomNum = getRandomNumber();
 
@@ -34,7 +34,7 @@ function Ghost() {
   return (
       <section onClick={()=>{navigate("/")}} className='ghostPop'>
         <figure><img src={`./ghost_${randomNum}.png`}></img></figure>
-        <p className='deadText' onClick={()=>{navigate("/")}}>당신은 죽었습니다.</p>
+        <p className='deadText' onClick={()=>{navigate("/")}}></p>
       </section>
 )
 }

@@ -35,7 +35,7 @@ import Room4_Event4 from './Component/Room4_Event4';
 import Room5_Event1 from './Component/Room5_Event1';
 import Escape from './Component/Escape';
 
-function App() {  
+function App() {
   const [play, { stop }] = useSound(soundFile, { loop: true, autoplay: true });
 
   useEffect(()=>{
