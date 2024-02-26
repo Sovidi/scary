@@ -11,7 +11,7 @@ const insert = (state, action) => {
         // case "search" : return action.d;
         case "comment" : return action.d;
         case "commentGet" : return action.d;
-        default : console.log("최종데이터 없음");
+        default : return action.d;
     }
 }
 
@@ -49,6 +49,7 @@ function Context({children}) {
 
     const server = axios.create({
         baseURL:"https://port-0-scary-server-6w1j2alm48bfok.sel5.cloudtype.app"
+        // baseURL:"http://localhost:3050/"
     })
 
     const space = axios.create({
@@ -83,10 +84,16 @@ function Context({children}) {
                 res = await server.post("/insert", data);
                 res = res.data;
                 break;
+            case "update" :
+                res = await server.put(`/update`, {msg: "아힝"});
+                res = res.data;
+                console.log(res);
             // case "search" : 
             //     res = await searchTest.get(`/`, {params: {q: data}});
             //     break;
-            default : console.log("데이터 없음");
+            default :                 
+                res = await server.get("/abc");
+                res = res.data;
         }
         dispatch({type, d: res});
         // console.log(res.data);

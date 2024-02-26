@@ -33,6 +33,7 @@ function EndRoom() {
           <input required type='text' placeholder='이름' name='name'/>
           <textarea required placeholder='댓글' name='message'></textarea>
           <button>등록하기</button>
+          <button type="button" onClick={()=>{fetchFn("update", "")}}>수정실험</button>
       </form>
 
       <p>방명록 확인</p>
