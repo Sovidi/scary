@@ -1,8 +1,8 @@
 const staticCacheName = "version-1"
 const urlsToCache = [
-    "/scary/index.html",
-    '/scary/static/js/bundle.js',
-    '/scary/manifest.json',
+    "index.html",
+    'static/js/bundle.js',
+    'manifest.json',
 ]
 
 const dynamicCache = "dynamicCache";
