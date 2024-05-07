@@ -172,10 +172,13 @@ body {
       .text{
         width: 30%;
         margin: 0 auto;
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        display: none;
+        &.active{
+          display: flex;
+        }
         >input{
           padding: 10px 0;
           text-align: center;
@@ -196,34 +199,39 @@ body {
 
         }
       }
-      .commentList{
-        text-align: left;
-        >.commentBox{
-          // text-align: left;
-          display: flex;
-          flex-direction: column;
-          justify-content: start;
-          align-items: start;
-          padding: 10px;
-          width: 200px;
-          margin: 5px auto;
-          color: rgb(255, 255, 255);
-          >p{
-            margin: 3% 0;
-          }
-          >div{
+      .commentBox{
+        &.active{
+          display: none;
+        }
+        .commentList{
+          text-align: left;
+          >.comments{
+            // text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            padding: 10px;
+            width: 200px;
+            margin: 5px auto;
+            color: rgb(255, 255, 255);
             >p{
-              &:nth-of-type(1){
-                font-weight: bold;
-                font-size: 1.3rem;
-              }
-              &:nth-of-type(2){
-                font-size: 1rem;
-                color: grey;
+              margin: 3% 0;
+            }
+            >div{
+              >p{
+                &:nth-of-type(1){
+                  font-weight: bold;
+                  font-size: 1.3rem;
+                }
+                &:nth-of-type(2){
+                  font-size: 1rem;
+                  color: grey;
+                }
               }
             }
           }
-        }
+        }  
       }
     }
   }
