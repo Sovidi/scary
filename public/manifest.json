@@ -34,7 +34,7 @@
       "purpose": "any" 
     },
     {
-      "src": "%PUBLIC_URL%/favicon-196x196.png",
+      "src": "./favicon-196x196.png",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any" 
